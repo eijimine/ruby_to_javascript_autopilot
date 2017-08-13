@@ -1,3 +1,4 @@
+require 'pry'
 
 def get_new_car
   {
@@ -86,6 +87,7 @@ def add_one_car_per_day(cars, num_days)
     new_car = get_new_car
     puts add_car cars, new_car
     command_fleet cars
+    binding.pry
   end
 end
 
